@@ -48,10 +48,23 @@
                               <span class='scroll-debug' scroll-position="scroll">{{scroll}}</span>
                   <h1 ng-class="{'bounce': scroll > 500, 'flash': scroll <= 500}">Test</h1>
                 -->
+				 <div id="promo-0" class="fadeIn animated slideInUp promo-0">
+                    <!-- <div class=logo-symbol-image crop crop-betting"></div> -->
+                    <div class="vertically-centered betting-info">
+                        <div class="w-100 background-1 padding content-box" >
+                         <div class="content-info-right f-15">
+                            {{'content.info'| translate }}
+                        </div>
+                        </div>
+
+                        <br>
+                    </div>
+                </div>
+				
                 <div id="promo-1" class="fadeIn animated slideInUp promo-1">
                     <div class="betting-promo-image w-50 crop crop-betting"></div>
                     <div class="w-50 vertically-centered betting-info">
-                        <div class="w-100 background-1 padding content-box" scroll-position="scroll" ng-class="{'animated zoomIn': scroll > 500, '': scroll <= 500}">
+                        <div class="w-100 background-1 padding content-box" scroll-position="scroll" ng-class="{'animated pulse': scroll > 500, '': scroll <= 500}">
                             <div class="icon-default icon-desk icon-box"></div>
                             <div class="content-info-right">
                             <h2> {{ 'content.betting' | translate }}</h2>
@@ -59,7 +72,7 @@
                         </div>
                         </div>
 
-                        <div class="w-100 background-1 padding content-box" scroll-position="scroll" ng-class="{'animated zoomIn': scroll > 600, '': scroll <= 600}">
+                        <div class="w-100 background-1 padding content-box" scroll-position="scroll" ng-class="{'animated pulse': scroll > 600, '': scroll <= 600}">
                             <div class="icon-default icon-mobile icon-box"></div>
                             <div class="content-info-right">
                             <h2> {{ 'content.mobile' | translate }}</h2>
@@ -82,8 +95,8 @@
 <div class="fadeIn animated slideInUp promo-3  background-4">
                     
               
-                    <div class="w-50 padding vertically-centered oracle-info">
-                        <div class="w-100 background-3 padding ">
+                    <div class="w-50 padding vertically-centered oracle-info" >
+                        <div class="w-100 background-3 padding "  scroll-position="scroll" ng-class="{'animated pulse': scroll > 1000, '': scroll <= 1000}">
                             <h2>{{ "content.oracle_partner" | translate }}</h2>
                             {{ "content.oracle_partner_info" | translate }}
                         </div>
@@ -102,7 +115,7 @@
 <div class="fadeIn animated slideInUp promo-2">
 <div class="digicert-promo-image w-50 crop crop-digicert"></div>
                     <div class="w-50 padding vertically-centered digicert-info">
-                        <div class="w-100">
+                        <div class="w-100"  class="w-100 background-3 padding "  scroll-position="scroll" ng-class="{'animated pulse': scroll > 1300, '': scroll <= 1300}">
                             <div class="w-100 background-2 padding">
                                 <h2><a href="http://www.digicert.com/authentication-encryption.htm"  target="_blank">{{ "content.ssl_partner" | translate }}  </a></h2>
                                 {{ "content.ssl_partner_info_1" | translate }}
