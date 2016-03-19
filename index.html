@@ -61,10 +61,10 @@
                     </div>
                 </div>
 				
-                <div id="promo-1" class="fadeIn animated slideInUp promo-1">
+                <div id="promo-1" class="fadeIn animated slideInUp promo-1 opacity-50"  scroll-position="scroll" ng-class="{'opacity-100': scroll > 200, '': scroll <= 200}">
                     <div class="betting-promo-image w-50 crop crop-betting"></div>
                     <div class="w-50 vertically-centered betting-info">
-                        <div class="w-100 background-1 padding content-box" scroll-position="scroll" ng-class="{'animated pulse': scroll > 500, '': scroll <= 500}">
+                        <div class="w-100 background-1 padding content-box ">
                             <div class="icon-default icon-desk icon-box"></div>
                             <div class="content-info-right">
                             <h2> {{ 'content.betting' | translate }}</h2>
@@ -72,7 +72,7 @@
                         </div>
                         </div>
 
-                        <div class="w-100 background-1 padding content-box" scroll-position="scroll" ng-class="{'animated pulse': scroll > 600, '': scroll <= 600}">
+                        <div class="w-100 background-1 padding content-box">
                             <div class="icon-default icon-mobile icon-box"></div>
                             <div class="content-info-right">
                             <h2> {{ 'content.mobile' | translate }}</h2>
@@ -92,11 +92,11 @@
                 <br>
                 <br>
                 <br>
-<div class="fadeIn animated slideInUp promo-3  background-4">
+<div class="fadeIn animated slideInUp promo-3  background-4 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 600, '': scroll <= 600}" >
                     
               
                     <div class="w-50 padding vertically-centered oracle-info" >
-                        <div class="w-100 background-3 padding "  scroll-position="scroll" ng-class="{'animated pulse': scroll > 1000, '': scroll <= 1000}">
+                        <div class="w-100 background-3 padding ">
                             <h2>{{ "content.oracle_partner" | translate }}</h2>
                             {{ "content.oracle_partner_info" | translate }}
                         </div>
@@ -112,7 +112,7 @@
                 <br>
                 <br>
                 <br>
-<div class="fadeIn animated slideInUp promo-2">
+<div class="fadeIn animated slideInUp promo-2 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 800, '': scroll <= 800}">
 <div class="digicert-promo-image w-50 crop crop-digicert"></div>
                     <div class="w-50 padding vertically-centered digicert-info">
                         <div class="w-100"  class="w-100 background-3 padding "  scroll-position="scroll" ng-class="{'animated pulse': scroll > 1300, '': scroll <= 1300}">

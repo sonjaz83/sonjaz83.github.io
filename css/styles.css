@@ -34,6 +34,13 @@ body{
 -o-background-size: cover;
 background-size: cover;
     color: #333;
+	
+	webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;
 }
 ul, li{
     list-style-type: none;
@@ -69,6 +76,11 @@ a{
 .background-3{background: gainsboro;}
 */
 
+/* .invisible, .content-box.invisible{display: none;}
+.visible, .invisible.visible{display: block;} */
+
+.opacity-50{opacity: 0.5; transition: all 1s ease;  margin-top: 5em;}
+.opacity-100{opacity: 1; transition: all 1s ease; margin-top: 0;}
 
 
 
@@ -97,6 +109,7 @@ width: 100%;
     position: relative;
     width: 100%;
     overflow: hidden;
+	height: 100vh;
 }
 .group {
     zoom: 1;
