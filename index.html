@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/animate.css">
         <!--  <link ng-href="css/{{ default_direction }}-app.css" rel="stylesheet">-->
-        <script src="js/angular.min.js"></script>
+
     </head>
     <body  class="animated slideInUp" ng-controller="MainController">
-        <div class="row">
+
 
             <div id="topimage">
                 <div class="section group">
@@ -24,7 +24,7 @@
                         <p class="txt-2 color-1 introtext fade-in two">{{'splash_screen.title_second'| translate }}</p>
                         <a class="link-style fade-in three cmn-t-underline" class="button" href="#promo-1" style="">{{'splash_screen.link'| translate }}</a>
                     </div>
-<!--                    <a href="#promo-1" class="next-arrow"></a>-->
+                    <!--                    <a href="#promo-1" class="next-arrow"></a>-->
 
                     <div class="intro-partners">
                         <div class="header-menu">
@@ -48,43 +48,43 @@
                               <span class='scroll-debug' scroll-position="scroll">{{scroll}}</span>
                   <h1 ng-class="{'bounce': scroll > 500, 'flash': scroll <= 500}">Test</h1>
                 -->
-				 <div id="promo-0" class="fadeIn animated slideInUp promo-0">
+                <div id="promo-0" class="fadeIn animated slideInUp promo-0">
                     <!-- <div class=logo-symbol-image crop crop-betting"></div> -->
                     <div class="vertically-centered betting-info">
                         <div class="w-100 background-1 padding content-box" >
-                         <div class="content-info-right f-15">
-                            {{'content.info'| translate }}
-                        </div>
+                            <div class="content-info-right f-15">
+                                {{'content.info'| translate }}
+                            </div>
                         </div>
 
                         <br>
                     </div>
                 </div>
-				
+
                 <div id="promo-1" class="fadeIn animated slideInUp promo-1 opacity-50"  scroll-position="scroll" ng-class="{'opacity-100': scroll > 200, '': scroll <= 200}">
                     <div class="betting-promo-image w-50 crop crop-betting"></div>
                     <div class="w-50 vertically-centered betting-info">
                         <div class="w-100 background-1 padding content-box ">
                             <div class="icon-default icon-desk icon-box"></div>
                             <div class="content-info-right">
-                            <h2> {{ 'content.betting' | translate }}</h2>
-                            {{'content.betting_info'| translate }}
-                        </div>
+                                <h2> {{ 'content.betting' | translate }}</h2>
+                                {{'content.betting_info'| translate }}
+                            </div>
                         </div>
 
                         <div class="w-100 background-1 padding content-box">
                             <div class="icon-default icon-mobile icon-box"></div>
                             <div class="content-info-right">
-                            <h2> {{ 'content.mobile' | translate }}</h2>
-                            {{'content.mobile_info'| translate }}
+                                <h2> {{ 'content.mobile' | translate }}</h2>
+                                {{'content.mobile_info'| translate }}
                                 <br>
                                 <br>
 
-                        
-                            </div>
-                            
 
                             </div>
+
+
+                        </div>
                         <br>
                     </div>
                 </div>
@@ -92,9 +92,9 @@
                 <br>
                 <br>
                 <br>
-<div class="fadeIn animated slideInUp promo-3  background-4 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 600, '': scroll <= 600}" >
-                    
-              
+                <div class="fadeIn animated slideInUp promo-3  background-4 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 600, '': scroll <= 600}" >
+
+
                     <div class="w-50 padding vertically-centered oracle-info" >
                         <div class="w-100 background-3 padding ">
                             <h2>{{ "content.oracle_partner" | translate }}</h2>
@@ -105,15 +105,15 @@
                             <img src="img/oracle-silver.png" style="">
                         </a>
                     </div>
-        <div class="oracle-promo-image w-50 crop crop-oracle"></div>
-                    
+                    <div class="oracle-promo-image w-50 crop crop-oracle"></div>
+
                 </div>
-                
+
                 <br>
                 <br>
                 <br>
-<div class="fadeIn animated slideInUp promo-2 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 800, '': scroll <= 800}">
-<div class="digicert-promo-image w-50 crop crop-digicert"></div>
+                <div class="fadeIn animated slideInUp promo-2 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 800, '': scroll <= 800}">
+                    <div class="digicert-promo-image w-50 crop crop-digicert"></div>
                     <div class="w-50 padding vertically-centered digicert-info">
                         <div class="w-100"  class="w-100 background-3 padding "  scroll-position="scroll" ng-class="{'animated pulse': scroll > 1300, '': scroll <= 1300}">
                             <div class="w-100 background-2 padding">
@@ -132,8 +132,8 @@
                                 <a style="text-decoration: none; text-align: center; display: inline; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: pointer; color: black; background: transparent;"></a>
                             </span></a>
                     </div>
-                    
-                    
+
+
                 </div>
 
                 <br>
@@ -142,7 +142,7 @@
             </div>
             <div id="contact">
                 <div class="col background-5">
-  
+
                     <div class="col1">
                         <div class="icon-default icon-pin"></div>
                         <p>{{ "footer.adress" | translate }} </p>
@@ -151,8 +151,8 @@
                     <div class="col1">
                         <div class="icon-default icon-phone"></div>
                         <p class="contact-phone">
-                        {{ "footer.phone" | translate }} &nbsp;  +381 18 530 507<br>
-                        {{ "footer.fax" | translate }} &nbsp;  +381 18 276 044
+                            {{ "footer.phone" | translate }} &nbsp;  +381 18 530 507<br>
+                            {{ "footer.fax" | translate }} &nbsp;  +381 18 276 044
                         </p>
                     </div>
                     <div class="col1">
@@ -161,7 +161,7 @@
                     </div>
                     <br>
 
-                    
+
 
                     <div class="col-top">
                         <p>"DualSOFT" d.o.o.</p>
@@ -171,17 +171,17 @@
             </div>
 
             <!-- Modules -->
-            
-			   <script src="js/app.min.js"></script>
-			   <script src="js/app.js"></script>
+            <script src="js/angular.min.js"></script>
+            <script src="js/app.min.js"></script>
+            <script src="js/app.js"></script>
 
             <!-- Controllers -->
-             <script src="js/controllers/mainController.js"></script> 
+            <script src="js/controllers/mainController.js"></script> 
 
             <!-- Directives -->
             <script src="js/directives/scrollPosition.js"></script>
             <!-- Services -->
 
-         
+
     </body>
 </html>
