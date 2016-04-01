@@ -28,7 +28,7 @@ body{
 /*    background-repeat: repeat-x;*/
     background-position: top center;
      background-attachment: fixed; 
-    background-image: url(../img/home-22.jpg);
+    background-image: url(../img/home-23.jpg);
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -521,7 +521,7 @@ tabs
         padding-top: 26%;
 } 
 .crop-digicert{
-     padding-top: 21%;
+     padding-top: 30%;
 }
 .crop-oracle{
         padding-top: 15%;
@@ -632,9 +632,42 @@ width: 100%;
 .opacity-100{opacity: 1; transition: none;  margin-top: 0;}
 
     
-    
 }
 
+.scroll-hint{
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+    background-color: rgba(56,146,203,0.3);
+    width: 8em;
+    height: 8em;
+    line-height: 8em;
+    border-radius: 10em;
+    margin-left: -5em;
+    color: #fff;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    font-size: 1.2em;
+}
+.scroll-hint:hover{
+    background-color: rgba(56,146,203,0.5);
+    transition: all 1s ease;
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+.scroll-hint .arrow-down{
+    background-image: url(../img/down.png);
+    position: absolute;
+    bottom: 0.8em;
+    width: 2em;
+    height: 2em;
+    margin: auto;
+    left: 50%;
+    margin-left: -1em;
+}
 
 
 
