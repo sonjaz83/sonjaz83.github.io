@@ -54,6 +54,8 @@ a{
 .f-08{font-size: 0.8em;}
 .f-09{font-size: 0.9em;}
 .f-15{font-size: 1.5em;}
+.f-2{font-size: 2em;}
+.f-3{font-size: 3em;}
 .header-txt{
     font-size: 1em;
 /*    line-height: 4.5em;*/
@@ -81,7 +83,7 @@ a{
 /* background: #1259c5;
  color: #fff; */
   background: rgba(7,32,48,1);
- color: #ffcc33; 
+ color: #fff; 
 
  }
 
@@ -222,7 +224,7 @@ display: table;
 	width :100%;
 
     }
-	..promo-1{
+	.promo-1{
 				text-transform: uppercase;
 	}
 
@@ -269,7 +271,6 @@ height: 0.1em;
 
 
 .vertically-centered{
-    font-size: 2em;
     display: table-cell;
 	vertical-align: middle;
 	width :100%;

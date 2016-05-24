@@ -4,173 +4,126 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title translate="TITLE"></title>
-        <!--	<link rel="shortcut icon" href="jquery-mobile/demos/favicon.ico">-->
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <!--  <link ng-href="css/{{ default_direction }}-app.css" rel="stylesheet">-->
+        <link rel="icon" type="image/png" href="img/symbol.png">
+        <!-- <link rel="stylesheet" href="css/animate.css">-->
 
     </head>
     <body  class="animated slideInUp" ng-controller="MainController">
 
-
-            <div id="topimage">
-                <div class="section group">
-                    <!--                <img src="img/home-1.jpg" class="heroimage" alt="picture of an oil rig">-->
-
-                    <div id="intro-text" class="">
-                        <img class="logo fade-in" src="img/logo.png">
-                        <h1 class="txt-1 color-1 fade-in one">{{'splash_screen.title_first'| translate }}</h1>
-                        <p class="txt-2 color-1 introtext fade-in two">{{'splash_screen.title_second'| translate }}</p>
-                        <a class="link-style fade-in three cmn-t-underline" class="button" href="#promo-1" style="">{{'splash_screen.link'| translate }}</a>
-                    </div>
-                    <!--                    <a href="#promo-1" class="next-arrow"></a>-->
-
-                    <div class="intro-partners">
-                        <div class="header-menu">
-                            <section>
-                                <div ng-controller="LanguageSwitchController" style="color: #fff;" class="language-icons">
-                                    <div class="lang-icon-en" ng-click="changeLanguage('en')" title="{{'BUTTON_LANG_EN'| translate}}"></div>
-                                    <div class="lang-icon-sr" ng-click="changeLanguage('sr')" title="{{'BUTTON_LANG_SR'| translate}}"></div>
-                                </div>
-                                <a href="#contact" class="cmn-t-underline header-txt">{{'header.contact'| translate}}</a>
-                            </section>
-                            <!--                <a href="#contact" class="header-txt">CONTACT</a>-->
-                        </div>
-                    </div>
+            <div class="menu-lines">
+            <div class="line1"><a href="#description-page">{{"our.company" | translate}}</a></div>
+            <div class="line2"><a href="#description-about">{{"about.us" | translate}}</a></div>
+            <div class="line3"><a href="#description-page-project">{{"project.services" | translate}}</a></div>
+            <div class="line4"><a href="#description-partners" >{{"" | translate}}</a></div>
+            <div class="line5"><a href="#description-page-project1">{{"partners" | translate}}</a></div>
+            <div class="line6"><a href="#description-contact" class="contact">{{"header.contact" | translate }}</a></div>
+        </div>
+        <div id="description-page" class="content-landing">
+            <div class="header" ng-controller="LanguageSwitchController">
+                <div class="header-inner">
+                <a href="#description-contact" class="contact">{{"header.contact" | translate }}</a>
+                <a ng-click="changeLanguage('en')">{{"button_lang_en" | translate}}</a>
+                <a ng-click="changeLanguage('sr')">{{"button_lang_sr" | translate}}</a>
                 </div>
             </div>
-            <div class="fadeIn animated slideInUp bottom-content">
-                <br>
-                <br>
-                <br>
-                <!--
-                              <span class='scroll-debug' scroll-position="scroll">{{scroll}}</span>
-                  <h1 ng-class="{'bounce': scroll > 500, 'flash': scroll <= 500}">Test</h1>
-                -->
-                <div id="promo-0" class="fadeIn animated slideInUp promo-0">
-                    <!-- <div class=logo-symbol-image crop crop-betting"></div> -->
-                    <div class="vertically-centered betting-info">
-                        <div class="w-100 background-1 padding content-box" >
-                            <div class="content-info-right f-15">
-                                {{'content.info'| translate }}
-                            </div>
-                        </div>
-
-                        <br>
-                    </div>
+            <div class="content-landing-transparent">
+                 <div class="page-1-logo-wrapper crop">
+                     <img class=" " src="img/logo.png"/>
                 </div>
-
-                <div id="promo-1" class="fadeIn animated slideInUp promo-1 opacity-50"  scroll-position="scroll" ng-class="{'opacity-100': scroll > 200, '': scroll <= 200}">
-                    <div class="betting-promo-image w-50 crop crop-betting"></div>
-                    <div class="w-50 vertically-centered betting-info">
-                        <div class="w-100 background-1 padding content-box ">
-                            <div class="icon-default icon-desk icon-box"></div>
-                            <div class="content-info-right">
-                                <h2> {{ 'content.betting' | translate }}</h2>
-                                {{'content.betting_info'| translate }}
-                            </div>
-                        </div>
-
-                        <div class="w-100 background-1 padding content-box">
-                            <div class="icon-default icon-mobile icon-box"></div>
-                            <div class="content-info-right">
-                                <h2> {{ 'content.mobile' | translate }}</h2>
-                                {{'content.mobile_info'| translate }}
-                                <br>
-                                <br>
-
-
-                            </div>
-
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-                <br>
-                <div class="fadeIn animated slideInUp promo-3  background-4 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 600, '': scroll <= 600}" >
-
-
-                    <div class="w-50 padding vertically-centered oracle-info" >
-                        <div class="w-100 background-3 padding ">
-                            <h2>{{ "content.oracle_partner" | translate }}</h2>
-                            {{ "content.oracle_partner_info" | translate }}
-                        </div>
-                        <br>
-                        <a href="https://solutions.oracle.com/scwar/scr/Partner/SCPP-YZCPVFJI.html" target="_blank" class="partners-link">
-                            <img src="img/oracle-silver.png" style="">
-                        </a>
-                    </div>
-                    <div class="oracle-promo-image w-50 crop crop-oracle"></div>
-
-                </div>
-
-                <br>
-                <br>
-                <br>
-                <div class="fadeIn animated slideInUp promo-2 opacity-50" scroll-position="scroll" ng-class="{'opacity-100': scroll > 800, '': scroll <= 800}">
-                    <div class="digicert-promo-image w-50 crop crop-digicert"></div>
-                    <div class="w-50 padding vertically-centered digicert-info">
-                        <div class="w-100"  class="w-100 background-3 padding "  scroll-position="scroll" ng-class="{'animated pulse': scroll > 1300, '': scroll <= 1300}">
-                            <div class="w-100 background-2 padding">
-                                <h2><a href="http://www.digicert.com/authentication-encryption.htm"  target="_blank">{{ "content.ssl_partner" | translate }}  </a></h2>
-                                {{ "content.ssl_partner_info_1" | translate }}
-                            </div>
-                            <br>
-                            <div class="w-100 background-2 padding">
-                                {{ "content.ssl_partner_info_2" | translate }}
-                            </div>
-                        </div>
-
-                        <br>
-
-                        <a  href="http://www.digicert.com/authentication-encryption.htm"  target="_blank" id="DigiCertClickID_lye5j448" data-language="en_US" class="partners-link"><div id="DigiCertClickID_lye5j448Seal" style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: default; background: transparent;"><img src="http://seal.digicert.com/seals/cypress/?s=lye5j448,15,m,www.dualsoft.net" style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: pointer; background: transparent;"></div><span style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: default; color: black; background: transparent;">
-                                <a style="text-decoration: none; text-align: center; display: inline; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: pointer; color: black; background: transparent;"></a>
-                            </span></a>
-                    </div>
-
-
-                </div>
-
-                <br>
-                <br>
-                <br>
             </div>
-            <div id="contact">
-                <div class="col background-5">
-
-                    <div class="col1">
+            <div class="rowline">
+                <a>scroll down</a>
+            </div>
+        </div>
+        <div id="description-about" class="content-description">
+            <div class="content-description-left">
+                <div class="front-line"></div>
+                <h1 class="text1">{{"splash_screen.title_first" | translate }}</h1>
+                <div class="text3"><span class="text2">DualSOFT</span>{{"about.company" | translate}}</div>
+            </div>
+            <div class="content-description-right">
+                <div class="rectangle1"> &nbsp;</div>
+                <div class="image1"></div>
+            </div>    
+        </div>
+        <div id="description-page-project" class="content-projects">
+            <div class="content-landing-transparent2">
+                <div class="page-3-logo-wrapper crop">
+                     <img class=" " src="img/logo.png"/>
+                     <p class="text4">{{"project.services" | translate}}</p>
+                </div>
+            </div>
+            
+            <div class="rowline2">
+                <a>scroll down</a>
+            </div>
+        </div>
+        <div class="content-web-mobile">
+            <div id="description-partners" class="content-web-mobile-right">
+            <div class="front-line2"></div>
+                <h1 class="text1">{{"content.betting" | translate}}</h1>
+                <div class="text3">{{"content.betting_info" | translate}}</div>
+                <div class="image2"></div>
+                <div class="rectangle2"></div>
+            </div>
+             <div class="content-web-mobile-left">
+             <div class="front-line2"></div>
+                 <h1 class="text1">{{"content.mobile" | translate}}</h1>
+                 <div class="rectangle2"></div>
+                 <div class="text3">{{"content.mobile_info" | translate}}</div>
+                 <div class="image3"></div>
+            </div>   
+            </div>   
+        <div id="description-page-project1" class="partner">
+        <div class="transparent-red">
+         <div class="page-3-logo-wrapper crop">
+                     <img class=" " src="img/logo.png"/>
+                     <p class="text4">{{"partner.first" | translate}}</p>
+                </div>   
+        </div>
+        </div>
+       
+        <div id="description-contact" class="content-contact"></div>
+        <div class="contact-line"></div>
+        <div id="contact" class="content-description">
+            <div class="contact-left">
+                <div class="front-line3"></div>
+                <h1 class="text1">{{"splash_screen.title_first" | translate }}</h1>
+                <div class="text3">{{"content.info" | translate}}</div>
+            </div>
+            <div class="contact-right">
+                <div class="image4"></div>
+            </div>    
+        </div>
+        <div class="contact-line"></div>
+        <div>
+                <div class="column-wrapper">
+                    <div class="column">
                         <div class="icon-default icon-pin"></div>
                         <p>{{ "footer.adress" | translate }} </p>
-
                     </div>
-                    <div class="col1">
+                    <div class="column">
                         <div class="icon-default icon-phone"></div>
                         <p class="contact-phone">
                             {{ "footer.phone" | translate }} &nbsp;  +381 18 530 507<br>
                             {{ "footer.fax" | translate }} &nbsp;  +381 18 276 044
                         </p>
                     </div>
-                    <div class="col1">
+                    <div class="column">
                         <div class="icon-default icon-mail"></div>
                         <p>info@dualsoft.net</p>
                     </div>
                     <br>
-
-
-
                     <div class="col-top">
                         <p>"DualSOFT" d.o.o.</p>
                     </div>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.6006343721247!2d21.929912315487037!3d43.32261897913384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0ee12700001%3A0xb8e1e9ef137c27cf!2sDualSOFT+d.o.o.!5e0!3m2!1sen!2srs!4v1457688031620" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe> 
             </div>
-
-            <!-- Modules -->
+        
+        <!-- Modules -->
             <script src="js/angular.min.js"></script>
             <script src="js/app.min.js"></script>
             <script src="js/app.js"></script>
@@ -184,4 +137,5 @@
 
 
     </body>
+
 </html>
