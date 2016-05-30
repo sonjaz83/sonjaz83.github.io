@@ -540,7 +540,7 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
 @media screen and (max-width:949px) { /*mobile*/
         body{
         font-size: 9px;
-        font-size: 1.2em;
+        font-size: 0.9em;
         line-height: 1.5em;
         font-family: Corbel, Arial, sans-serif;
     }
@@ -558,7 +558,7 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
     }
     .content-landing-transparent{
         margin-top: 7.5em;
-        height; 70%;
+        height: 70%;
     }
     .content-web-mobile{
         flex-direction: column;
@@ -617,18 +617,13 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
         width: 100%;
     }
     .content-description-right{
-        width: 100%;
-        position: relative;
+       display: none;
     }
     .content-description-left{
         width: 100%;
     }
     .rectangle1{
-        width: 100em;
-        position: absolute;
-    }
-    .rectangle1{
-        width: 100em;
+        width: 100%;
         position: absolute;
     }
     .image1{
@@ -647,4 +642,16 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
            font-size: 1.5em;
         width: 90%;
     margin: 1em auto;
+    }
+    .menu-lines .line1 a,
+    .menu-lines .line2 a,
+    .menu-lines .line3 a,
+    .menu-lines .line4 a,
+    .menu-lines .line5 a,
+    .menu-lines .line6 a{
+        display: block;
+        background: rgba(89,206,244, 1);
+    }
+    
+    
     }
