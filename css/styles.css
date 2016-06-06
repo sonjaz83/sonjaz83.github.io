@@ -10,6 +10,9 @@ html, body, div, input{
      transition: all 1s;
     -webkit-transition: all 0.5s ease-in-out;
 }
+.opacity-0{
+    opacity: 0;
+}
 .opacity-50{
     opacity: 0.5;
 }
@@ -59,7 +62,6 @@ html, body, div, input{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 
 /**************************/
 
@@ -129,12 +131,10 @@ body{
              transition: all 1s;
     -webkit-transition: all 0.5s ease-in-out;
     float: right;
-
 }
 .menu-lines div:hover{
 /*   margin-left: 8em;*/
     width: 12em;
-
 }
 .menu-lines div:hover a{
 /*   left: -4em;*/
@@ -143,7 +143,6 @@ body{
          transition: all 1s;
     -webkit-transition: all 0.5s ease-in-out;
 */
-
 }
 .menu-lines div a{
     display: block;
@@ -154,7 +153,6 @@ body{
     text-shadow: 10%;
     color: #fff;
 }
-
 .menu-lines div:hover{
     background: rgba(89,206,244, 1);
     cursor: pointer;
@@ -304,7 +302,6 @@ body{
     font-size: 1.5em;
     margin: 2em;
     line-height: 1.5em;
-.
 }
 .image1{
     height: 100%;
@@ -332,7 +329,6 @@ body{
     text-align: right;
     font-style: italic;
     color: whitesmoke;
-    
 }
 .content-projects{
     background-image: url(../img/3.jpg);
@@ -468,7 +464,6 @@ box-shadow: 12px -9px 9px -3px rgba(163,163,163,1);
     bottom: -50px;
     z-index: 2;
 }
-
 .picture1{
     width: 100%;
     height: 100%;
@@ -597,11 +592,7 @@ box-shadow: 12px -9px 9px -3px rgba(163,163,163,1);
     width: 80%;
     margin-top: 5em;
     padding-bottom: 60%;
-    -webkit-box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
--moz-box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
-box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
 }
-
 .column-wrapper{
     width: 98%;
     /*height: 13em;*/
@@ -656,7 +647,6 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
         line-height: 1.5em;
         font-family: Corbel, Arial, sans-serif;
     }
-   
 .icon-pin{background-image: url(../img/pin%20-%20Copy.png);}
 .icon-mail{background-image: url(../img/mail%20-%20Copy.png);}
 .icon-phone{background-image: url(../img/phone%20-%20Copy.png);}
@@ -670,6 +660,7 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
     }
     .content-landing-transparent{
         margin-top: 11em;
+        height: 80%;
     }
     .content-web-mobile{
         flex-direction: column;
@@ -687,6 +678,7 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
         width: 80%;
         left: 10%;
         margin-left: 0%;
+        top: 15em;
     }
     .logo2{
         width: 80%;
@@ -697,10 +689,13 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
         flex-direction: column;
         flex-grow: 2;   
         width: 100%;
-        height: 30em;
     }
     .image4{
         width: 100%;
+        animation: none;
+    }
+    .rectanglee2{
+        height: 4em;
     }
     .rectangle3{
         display: none;
@@ -729,7 +724,7 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
         width: 100%;
     }
     .content-description-right{
-       display: none;
+        display: none;
     }
     .content-description-left{
         width: 100%;
@@ -739,7 +734,7 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
         position: absolute;
     }
     .image1{
-       width: 40%;
+        width: 40%;
     }
     .rectangle2{
         height:0em;
@@ -754,7 +749,7 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
     .text2{
         font-size: 1.5em;
         width: 90%;
-    margin: 1em auto;
+        margin: 1em auto;
     }
     .menu-lines{
         display: none;
@@ -773,21 +768,37 @@ box-shadow: 6px 8px 13px 1px rgba(133,7,19,0.61);
         left: 0;
         top: 7.4em;
     }
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: left;
-    display: inline-block;
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li.icon {
+        float: left;
+        display: inline-block;
     }
     ul.topnav{
         display: flex;
         position: fixed;
         z-index: 50;
-        width: 100%;
+        width: 4em;
     }
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+   ul.topnav.responsive {position: relative;}
+   ul.topnav.responsive li.icon {
+       position: absolute;
+       right: 0;
+       top: 0;
    }
-     }
+    .image5 {
+        height: 60%;
+        top: 3em;
+    }
+   .contact-right {
+        height: 17em;
+    }
+    /*klasa efekta pojavljivanja*/
+    .animate{
+      transition: all 0s;
+    -webkit-transition: all 0s ease-in-out;
+    }
+    .opacity-50{
+        opacity: 1;
+    }
+  
+  
